@@ -1,0 +1,25 @@
+--exit(0) 
+When using exit(0) destructor for locally created non-static objects are
+not called. Only constructor is called. 
+
+--return 0;
+When using return 0; destructor for locally created non-static objects are
+Are called with constructor too. 
+
+
+--exit(0) vs exit(1) in C/C++ with Examples
+
+                     exit(0) 
+
+Reports the successful termination/completion of 
+the program.
+Reports the termination when the program gets 
+executed without any error.
+The syntax is exit(0);
+
+                     exit(1)
+
+Reports the abnormal termination of the program.
+Reports the termination when some error or 
+interruption occurs during the execution of the program.
+The syntax is exit(1);
